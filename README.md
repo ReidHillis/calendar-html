@@ -11,3 +11,5 @@ Features:
   * Adding events with details (name, time, description)
   * View & delete events
   * Data saved in local storage
+
+*Completed: March 2025*
