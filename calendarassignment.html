@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="calendarstyle.css">
+    <title>Calendar Application</title>
+</head>
+<body>
+    <div>
+        <div class="topBar">
+            <button id="previousMonth">Previous Month</button>
+            <h1 id="currentMonth"></h1>
+            <button id="nextMonth">Next Month</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody">
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modalDate"></h2>
+
+            <div id="eventList"></div>
+
+            <h3>Add Event</h3>
+            <input type="text" id="eventName" placeholder="Event Name">
+
+            <div class="time-selectors">
+                <select id="eventHour"></select> :
+                <select id="eventMinute"></select>
+                <select id="eventPeriod">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+
+            <textarea id="eventDetails" placeholder="Event Details"></textarea>
+
+            <button id="saveEvent" class="button-primary">Save Event</button>
+        </div>
+    </div>
+    <script src="calendarscript.js"></script>
+</body>
+</html>
